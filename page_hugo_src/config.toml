@@ -29,6 +29,7 @@ theme='hugo-theme-shell'
   pcName = "page"
   workDir = "intro"
   profile = "about_me.txt"
+  stack_file = "fav_stack.txt"
 
   # Note: speed at which text is displayed on the terminal
   # Note: if set to 0, typing animation will be disabled
@@ -52,7 +53,8 @@ theme='hugo-theme-shell'
   # activityDelay = 5 : deprecated
 
   description = """
-  Hi I am Eryk! Nice to meet you!
+
+  Hi, I am Eryk! Nice to meet you!
   I'm software engineer with 5 years of exp.
   I've been working mainly with C/C++: 
   high level Linux apps and embedded systems.
@@ -61,20 +63,23 @@ theme='hugo-theme-shell'
   
   """
 
+  stack_description = """
+
+  C/C++, Python
+  CMake, GTest
+  Git
+  Linux, freeRTOS
+
+  """
+
   # Note: If you want to use a Markdown file, you can use the following
   # description = "/description.md"
   # Note: and put the description.md in /content/description.md
 
   [Params.Tree]
   use = true
-  folderName = "my_favourite_stack"
+  folderName = "contact"
   # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
   files = [ 
-    ["C/C++", ""],
-    ["CMake", ""],
-    ["GTest", ""],
-    ["Linux", ""],
-    ["freeRTOS", ""],
-    ["Python", ""],
-    ["Git", ""],
+    ["LinkedIn", "https://www.linkedin.com/in/eryk-szyfner-1a42bb133/"],
   ]

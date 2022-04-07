@@ -591,86 +591,6 @@ body{background:#1b1d1e}body #terminal{color:#BBBBBB}body #user{color:#23E298}bo
             
             
             
-                
-            
-            
-            
-            
-            
-        
-            
-            
-
-            
-            
-            
-                
-            
-            
-            
-            
-            
-        
-            
-            
-
-            
-            
-            
-                
-            
-            
-            
-            
-            
-        
-            
-            
-
-            
-            
-            
-                
-            
-            
-            
-            
-            
-        
-            
-            
-
-            
-            
-            
-                
-            
-            
-            
-            
-            
-        
-            
-            
-
-            
-            
-            
-                
-            
-            
-            
-            
-            
-        
-            
-            
-
-            
-            
-            
-                
-            
             
             
             
@@ -680,6 +600,13 @@ body{background:#1b1d1e}body #terminal{color:#BBBBBB}body #user{color:#23E298}bo
 
     
 
+    
+
+    
+    
+    
+
+    
     
 
     
@@ -687,9 +614,14 @@ body{background:#1b1d1e}body #terminal{color:#BBBBBB}body #user{color:#23E298}bo
     
 
     <span id="ps1_01"></span> <span id="cd"></span> <br>
-<span id="ps1_02"></span> <span id="cat"></span> <br>
+<span id="ps1_02"></span> <span id="cat_intro"></span> <br>
 <span id="std_out_01"></span> <br>
-<span id="ps1_03"></span> <span id="tree"></span> <br>
+
+
+<span id="ps1_05"></span> <span id="cat_stack_span"></span> <br>
+<span id="std_out_01e"></span> <br>
+
+<span id="ps1_03"></span> <span id="tree_contacts"></span> <br>
 <span id="std_out_02"></span> <br>
 <span id="ps1_04"></span>
 
@@ -742,10 +674,15 @@ body{background:#1b1d1e}body #terminal{color:#BBBBBB}body #user{color:#23E298}bo
         commandDelay = parseDelay("50");
     const typeeffetct = async () => {
         await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eeryk@page\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_01", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003ecd intro\u003c\/span\u003e", "cd", commandDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eeryk@page\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/intro\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ecat about_me.txt\u003c\/span\u003e", "cat", commandDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e  Hi I am Eryk! Nice to meet you!\u003cbr\u003e  I\u0027m software engineer with 5 years of exp.\u003cbr\u003e  I\u0027ve been working mainly with C\/C\u002b\u002b: \u003cbr\u003e  high level Linux apps and embedded systems.\u003cbr\u003e  I\u0027m not afraid of any programming job.\u003cbr\u003e  I am eager to learn and try new things.\u003cbr\u003e  \n  \u003c\/span\u003e", "std_out_01", stdoutDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eeryk@page\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/intro\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/my_favourite_stack\/\u003c\/span\u003e", "tree", commandDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/my_favourite_stack\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e├── \u003ca href=\u0027http:\/\/example.org\/\u0027\u003eC\/C\u002b\u002b\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027http:\/\/example.org\/\u0027\u003eCMake\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027http:\/\/example.org\/\u0027\u003eGTest\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027http:\/\/example.org\/\u0027\u003eLinux\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027http:\/\/example.org\/\u0027\u003efreeRTOS\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e├── \u003ca href=\u0027http:\/\/example.org\/\u0027\u003ePython\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e└── \u003ca href=\u0027http:\/\/example.org\/\u0027\u003eGit\u003c\/a\u003e\u003c\/span\u003e", "std_out_02", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eeryk@page\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/intro\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ecat about_me.txt\u003c\/span\u003e", "cat_intro", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cbr\u003e  Hi, I am Eryk! Nice to meet you!\u003cbr\u003e  I\u0027m software engineer with 5 years of exp.\u003cbr\u003e  I\u0027ve been working mainly with C\/C\u002b\u002b: \u003cbr\u003e  high level Linux apps and embedded systems.\u003cbr\u003e  I\u0027m not afraid of any programming job.\u003cbr\u003e  I am eager to learn and try new things.\u003cbr\u003e  \n  \u003c\/span\u003e", "std_out_01", stdoutDelay);
+
+         
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eeryk@page\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/intro\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_05", ps1Delay); await typewriter("\u003cspan id=terminal\u003ecat fav_stack.txt\u003c\/span\u003e", "cat_stack_span", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cbr\u003e  C\/C\u002b\u002b, Python\u003cbr\u003e  CMake, GTest\u003cbr\u003e  Git\u003cbr\u003e  Linux, freeRTOS\u003cbr\u003e\n  \u003c\/span\u003e", "std_out_01e", stdoutDelay);
+
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eeryk@page\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/intro\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/contact\/\u003c\/span\u003e", "tree_contacts", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/contact\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e└── \u003ca href=\u0027https:\/\/www.linkedin.com\/in\/eryk-szyfner-1a42bb133\/\u0027\u003eLinkedIn\u003c\/a\u003e\u003c\/span\u003e", "std_out_02", stdoutDelay);
         await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003eeryk@page\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/intro\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_04", ps1Delay);
         return;
     }
@@ -757,26 +694,6 @@ body{background:#1b1d1e}body #terminal{color:#BBBBBB}body #user{color:#23E298}bo
         </div>
         
         <span class="navFull">
-        
-    
-    
-
-    
-        
-
-<span>
-    <a href="/">Home</a>
-    <span>&#8192;|&#8192;</span>
-    <a href="./..">/</a>
-</span>
-
-    
-
-        
-        <span class="navCredits">
-            Hugo theme created by
-            <a href="https://github.com/Yukuro/hugo-theme-shell" target="_blank" rel="noopener">Yukuro</a>
-        </span>
 </span>
 
         
